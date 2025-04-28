@@ -14,7 +14,9 @@
 O BodyBoost é uma plataforma online inovadora que conecta usuários a uma ampla rede de academias e clínicas de saúde. Nosso objetivo é facilitar o acesso a serviços de bem-estar e saúde, oferecendo funcionalidades como agendamento online, armazenamento seguro de histórico de exames e um mapa intuitivo para descobrir estabelecimentos próximos. O BodyBoost busca ser o seu ponto central para cuidar da sua saúde e fitness.
 
 **Versão Inicial:** 0.1.0 (Alpha)
-
+<p align="center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT12zMIeEC4YRMNDN8BCN7L5AveOBnxHKB5ww&s" width="300">
+    </p>
 ## Funcionalidades Principais
 
 * **Conexão com Academias e Clínicas:** Explore e conecte-se com diversas academias e clínicas de saúde em sua região, encontrando os serviços que você procura.
