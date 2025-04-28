@@ -1,0 +1,90 @@
+<?php
+if(!empty($_GET['id'])){
+    include_once('conexao.php');
+    $id = $_GET['id'];
+
+    $sqlSelect = "SELECT * FROM pjp WHERE id=$id";
+
+    $result = $conexao->query($sqlSelect);
+    //print_r($result);
+
+
+    if($result->num_rows > 0){
+
+        while($_user_data = mysqli_fetch_assoc($result)){
+        $razao_social = $_user_data['razao_social'];
+        $cnpj = $_user_data['cnpj'];
+        $email = $_user_data['email'];
+        $telefone = $_user_data['telefone'];
+        $cidade = $_user_data['cidade'];
+        $estado = $_user_data['estado'];
+        $endereco = $_user_data['endereco'];
+        $senha = $_user_data['senha'];
+        }
+
+    }else{
+        header('Location:sistemap.php');
+    }
+    
+
+    
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="box">
+        <form action="saveEdit.php" method="post">
+            <fieldset>
+                <legend><b>Fomulário de Cadastro</b></legend><br>
+                <div class="inputBox">
+                    <input type="text" name="razao_social" id="razao_social" class="inputUser" value="<?php echo $razao_social?>" required>
+                    <label for="razao_social" class="labelInput">razao social</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="cnpj" id="cnpj" class="inputUser" value="<?php echo $cnpj?>" required>
+                    <label for="cnpj" class="labelInput">cnpj</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" value="<?php echo $email?>" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" value="<?php echo $senha?>" required>
+                    <label for="senha" class="labelInput">Endereço</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" value="<?php echo $telefone?>" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" value="<?php echo $cidade?>" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" value="<?php echo $estado?>" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" value="<?php echo $endereco?>" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div><br>
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <button type="submit" name="update" id="button">Atualizar</button>
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

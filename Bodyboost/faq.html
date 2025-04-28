@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Perguntas Frequentes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .faq-container {
+            margin: 20px;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .faq-question:hover {
+            color: #4CAF50;
+        }
+
+        .active .faq-answer {
+            display: block;
+        }
+
+        .faq-questio {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Perguntas Frequentes (FAQ)</h1>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-questio">Duvidas frequentes para colaboradores</div>
+
+            <div class="faq-item">
+                <div class="faq-question">É necessario ter empresa aberta, para se cadastrar como parceiro?</div>
+                <div class="faq-answer">Sim, é preciso da razão social, cnpj, E-mail, telefone e endereço.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como se tornar parceiro?</div>
+                <div class="faq-answer">A parceria com o Wellhub é gratuita e possibilita o acesso frequente de mais
+                    pessoas ao seu espaço ou serviço.</div>
+
+                <div class="faq-answer"> Para se tornar nosso parceiro, é necessário ter um CNPJ válido e seguir os
+                    próximos passos de acordo com o seu perfil:</div>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-questio">Duvidas frequentes para clientes</div>
+            <div class="faq-item">
+                <div class="faq-question">O cadastro pede cpf?</div>
+                <div class="faq-answer">Não, não é necessario o cpf para cadastro.</div>
+
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como faço para me cadastrar?</div>
+                <div class="faq-answer">Para trazer mais segurança e praticidade na hora de aderir ao benefício
+                    Bodyboost, o cadastro é feito 100% pelo site.</div>
+                <div class="faq-answer">
+                    E o melhor de tudo: você poderá navegar em todos os nossos serviços e redes parceiras antes de
+                    escolher o plano que melhor atende às suas necessidades para treinar com a gente.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como faço para gerar o cupom?</div>
+                <div class="faq-answer">Faça o login e acesse o parceiro desejado.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como funciona o pagamento da assinatura?</div>
+                <div class="faq-answer">As cobranças são mensais, ocorrem na data de ativação do plano e essa data não
+                    pode ser alterada.</div>
+                <div class="faq-answer"> Exemplo: se o plano foi ativado no dia 5 de janeiro, as próximas cobranças
+                    ocorrerão todo dia 5 nos meses seguintes.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbarrodape">
+        <ul>
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <p>&copy; 2025 Site de Parcerias - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura total da janela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    color: darkred;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px; /* Reduzi o padding interno */
+    height: 60px; /* Defini uma altura fixa menor */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.i1 {
+    max-width: 15%; /* Ajustei o tamanho da logo para acompanhar o header menor */
+    height: auto;
+}
+
+.container {
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px; /* Ajustei para 300px para mais espaço */
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 20px; /* Para evitar que sobreponha o header */
+    
+    max-height: 400px; /* Limita a altura do formulário */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+}
+/* Personalização da barra de rolagem */
+.container::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #2e2e2e; /* Cor de fundo do trilho */
+    border-radius: 10px; /* Bordas arredondadas para o trilho */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #1ed760; /* Cor do polegar da barra de rolagem (verde) */
+    border-radius: 10px; /* Bordas arredondadas para o polegar */
+    border: 2px solid #1e1e1e; /* Adiciona uma borda de contraste ao redor do polegar */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #0db94d; /* Cor do polegar ao passar o mouse (verde mais escuro) */
+}
+
+
+.loginBox {
+    background-color:rgba(54, 54, 54, 0.8);
+    border: 1px solid #333;
+    position: absolute; /* Para centralizar na tela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 50%; /* Centralizado verticalmente */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o alinhamento central */
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    width: 25%; /* Mesma largura da div 'inicio' */
+    height: auto; /* Ajustável conforme o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+
+.loginBox h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.inputLogin {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #585858;
+    color: white;
+}
+
+.inputLogin::placeholder {
+    color: #e7e6e6; /* Cor do texto placeholder */
+}
+
+.cadastro-link {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+    color: white; /* Garante que o texto esteja visível */
+}
+
+.cadastro-link a {
+    color: rgb(199, 0, 0); /* Personalize a cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s;
+}
+
+.cadastro-link a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+
+#button {
+    background-color: rgb(199, 0, 0);
+    width: 40%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#button:hover {
+    background-color: #1ed760;
+    transform: scale(1.1);
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo cobrir a tela mantendo as proporções */
+    object-position: center center; /* Centraliza o vídeo na tela */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    opacity: 0.7; /* Define a opacidade para dar o efeito desejado */
+    transition: opacity 1s ease-in-out; /* Transição suave na opacidade */
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    transition: color 0.3s;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #1ed760;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Espaço entre os botões */
+    margin-top: 15px;
+}
+
+.main-button {
+    background-color: rgb(199, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-button:hover {
+    background-color: #1ed760;
+    transform: scale(1.1); /* Pequeno efeito de zoom ao passar o mouse */
+}
+
+
+.cabecalho {
+    background-color: transparent; /* Torna o fundo da header transparente */
+}
+
+.cabecalho img,
+.cabecalho nav {
+    opacity: 1; /* Garante que o logo e menu sejam visíveis */
+}
+
+
