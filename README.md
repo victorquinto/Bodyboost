@@ -100,4 +100,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE.md) - veja o arquivo [
 
 ## Contato
 
-Para dúvidas e sugestões, entre em contato através do e-mail: [[seu e-mail de contato]] ou abra uma Issue neste repositório.
+Para dúvidas e sugestões, entre em contato através do e-mail: victorcerqueiramagalhães@gmailcom.
