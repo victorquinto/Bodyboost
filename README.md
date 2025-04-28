@@ -1,5 +1,14 @@
 # BodyBoost
 
+## Badges
+
+[![Version](https://img.shields.io/badge/Version-0.1.0--alpha-blue)](https://github.com/seu-usuario/bodyboost/releases/tag/v0.1.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![PHP Version](https://img.shields.io/badge/PHP->=7.4-blue.svg)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7+-blue.svg)](https://www.mysql.com/)
+[![WampServer](https://img.shields.io/badge/Server-WampServer-orange)](https://www.wampserver.com/en/)
+[![Jest](https://img.shields.io/badge/Tests-Jest-brightgreen)](https://jestjs.i
+
 ## Descrição do Projeto
 
 O BodyBoost é uma plataforma online inovadora que conecta usuários a uma ampla rede de academias e clínicas de saúde. Nosso objetivo é facilitar o acesso a serviços de bem-estar e saúde, oferecendo funcionalidades como agendamento online, armazenamento seguro de histórico de exames e um mapa intuitivo para descobrir estabelecimentos próximos. O BodyBoost busca ser o seu ponto central para cuidar da sua saúde e fitness.
@@ -92,15 +101,3 @@ Este projeto está licenciado sob a [MIT License](LICENSE.md) - veja o arquivo [
 ## Contato
 
 Para dúvidas e sugestões, entre em contato através do e-mail: [[seu e-mail de contato]] ou abra uma Issue neste repositório.
-
-## Badges
-
-[![Version](https://img.shields.io/badge/Version-0.1.0--alpha-blue)](https://github.com/seu-usuario/bodyboost/releases/tag/v0.1.0)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-[![PHP Version](https://img.shields.io/badge/PHP->=7.4-blue.svg)](https://www.php.net/)
-[![MySQL](https://img.shields.io/badge/MySQL-5.7+-blue.svg)](https://www.mysql.com/)
-[![WampServer](https://img.shields.io/badge/Server-WampServer-orange)](https://www.wampserver.com/en/)
-[![Jest](https://img.shields.io/badge/Tests-Jest-brightgreen)](https://jestjs.io/)
-[![Google Maps](https://img.shields.io/badge/Google_Maps_Platform-Enabled-brightgreen)](https://cloud.google.com/maps-platform)
-
----
