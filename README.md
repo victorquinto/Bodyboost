@@ -7,7 +7,7 @@
 [![PHP Version](https://img.shields.io/badge/PHP->=7.4-blue.svg)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7+-blue.svg)](https://www.mysql.com/)
 [![WampServer](https://img.shields.io/badge/Server-WampServer-orange)](https://www.wampserver.com/en/)
-[![Jest](https://img.shields.io/badge/Tests-Jest-brightgreen)](https://jestjs.i
+[![Jest](https://img.shields.io/badge/Tests-Jest-brightgreen)]
 
 ## Descrição do Projeto
 
