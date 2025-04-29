@@ -43,10 +43,6 @@ if (isset($_POST["submit"])) {
         <nav>
             <ul class="menu">
                 <li><a href="home.php">Home</a></li>
-                <li><a href="loginCliente.php">Login Cliente</a></li>
-                <li><a href="loginParceiro.php">Login Parceiro</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -107,8 +103,9 @@ if (isset($_POST["submit"])) {
             <li><a href="#">Termos de Serviço</a></li>
             <li><a href="#">Política de Privacidade</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <li><a href="manual.html">Contate-nos</a></li>
         </ul>
-        <p>&copy; 2025 Site de Parcerias - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Todos os direitos reservados - BODYBOOST LTDA. CNPJ: 00.000.000/0000-00.</p>
     </footer>
 
      <script src="script.js"></script>
