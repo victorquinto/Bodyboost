@@ -129,7 +129,10 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
 
     <!-- Navbar superior -->
     <header class="cabecalho">
-        <img class="i1" src="img/log.png" alt="Logo" class="logo">
+    <div class="logo">
+            <span class="body-neutro">BODY</span>
+            <span class="boost-neutro">BOOST</span>
+        </div>
         <nav>
             <ul class="menu">
                 <li><a></li>

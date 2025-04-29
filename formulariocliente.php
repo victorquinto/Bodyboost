@@ -29,6 +29,23 @@ if (isset($_POST["submit"])) {
 
 
 </head>
+<style>
+
+.logo {
+            font-family: 'Impact', sans-serif;
+            font-size: 2em; /* Aumenta o tamanho da fonte da logo */
+        }
+
+        .body-neutro {
+            color: #0db94d;
+            /* Azul aço */
+        }
+
+        .boost-neutro {
+            color: #A9A9A9;
+            /* Cinza elegante */
+        }
+</style>
 <body>
 
     <!-- Adicione o elemento de vídeo no HTML -->
@@ -39,7 +56,10 @@ if (isset($_POST["submit"])) {
 </video>
     
    <header class="cabecalho">
-        <img class="i1" src="img/log.png" alt="Logo" class="logo">
+   <div class="logo">
+            <span class="body-neutro">BODY</span>
+            <span class="boost-neutro">BOOST</span>
+        </div>
         <nav>
             <ul class="menu">
                 <li><a href="home.php">Home</a></li>

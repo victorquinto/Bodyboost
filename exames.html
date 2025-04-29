@@ -11,9 +11,12 @@
     <style>
         .card-container {
             display: flex;
-            justify-content: center; /* Centraliza os cards horizontalmente */
-            flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
-            margin-top: 20px; /* Adiciona espaço acima dos cards */
+            justify-content: center;
+            /* Centraliza os cards horizontalmente */
+            flex-wrap: wrap;
+            /* Permite que os cards quebrem para a próxima linha em telas menores */
+            margin-top: 20px;
+            /* Adiciona espaço acima dos cards */
         }
 
         .card {
@@ -23,7 +26,8 @@
             color: white;
             width: 25%;
             justify-content: center;
-            margin: 10px; /* Adiciona espaço entre os cards */
+            margin: 10px;
+            /* Adiciona espaço entre os cards */
         }
 
         .title {
@@ -39,7 +43,8 @@
             color: white;
             padding: 20px;
             border-radius: 5px;
-            margin: 10px; /* Adiciona margem para separação quando empilhados */
+            margin: 10px;
+            /* Adiciona margem para separação quando empilhados */
         }
 
         #resultado {
@@ -49,7 +54,8 @@
             color: white;
             padding: 20px;
             border-radius: 5px;
-            margin: 10px; /* Adiciona margem para separação quando empilhados */
+            margin: 10px;
+            /* Adiciona margem para separação quando empilhados */
         }
 
         #resultados-exames h2 {
@@ -93,12 +99,14 @@
         }
 
         #resultadoSalvo {
-            margin-top: 10px; /* Reduz a margem superior quando lado a lado */
+            margin-top: 10px;
+            /* Reduz a margem superior quando lado a lado */
             padding: 15px;
             border: 1px solid #eee;
             border-radius: 5px;
             background-color: rgba(0, 0, 0, 0.5);
-            display: none; /* Inicialmente escondido */
+            display: none;
+            /* Inicialmente escondido */
         }
 
         #resultadoSalvo h3 {
@@ -116,17 +124,40 @@
         /* Estilos para layout lado a lado */
         .resultados-container {
             display: flex;
-            flex-wrap: wrap; /* Permite que quebre em telas menores */
-            gap: 20px; /* Espaço entre os itens */
-            justify-content: space-around; /* Distribui o espaço */
-            margin: 20px auto; /* Centraliza o container e adiciona margem */
-            max-width: 1200px; /* Largura máxima para o container */
+            flex-wrap: wrap;
+            /* Permite que quebre em telas menores */
+            gap: 20px;
+            /* Espaço entre os itens */
+            justify-content: space-around;
+            /* Distribui o espaço */
+            margin: 20px auto;
+            /* Centraliza o container e adiciona margem */
+            max-width: 1200px;
+            /* Largura máxima para o container */
         }
 
         #resultados-exames,
         #resultado {
-            flex: 1; /* Cada seção ocupa o mesmo espaço disponível */
-            min-width: 300px; /* Largura mínima para evitar que fiquem muito estreitos */
+            flex: 1;
+            /* Cada seção ocupa o mesmo espaço disponível */
+            min-width: 300px;
+            /* Largura mínima para evitar que fiquem muito estreitos */
+        }
+
+        .logo {
+            font-family: 'Impact', sans-serif;
+            font-size: 2em;
+            /* Aumenta o tamanho da fonte da logo */
+        }
+
+        .body-neutro {
+            color: #0db94d;
+            /* Azul aço */
+        }
+
+        .boost-neutro {
+            color: #A9A9A9;
+            /* Cinza elegante */
         }
     </style>
 </head>
@@ -139,7 +170,10 @@
     </video>
 
     <header class="cabecalho">
-        <img class="i1" src="img/log.png" alt="Logo" class="logo">
+        <div class="logo">
+            <span class="body-neutro">BODY</span>
+            <span class="boost-neutro">BOOST</span>
+        </div>
         <nav>
             <ul class="menu">
                 <li><a href="loginCliente.html">Para clientes</a></li>
@@ -168,7 +202,7 @@
                 </div>
                 <div class="form-group">
                     <label for="resultadoExame">Resultado do Exame (Opcional):</label>
-                    <textarea class="form-control" id="resultadoExame" name="resultadoExame" rows="5" ></textarea>
+                    <textarea class="form-control" id="resultadoExame" name="resultadoExame" rows="5"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="arquivoExame">Documento ou Foto do Exame:</label>
@@ -182,11 +216,16 @@
         <section id="resultado">
             <div id="resultadoSalvo" style="display: none;">
                 <h3>Resultado Salvo</h3>
-                <p class="resultado-item"><span class="resultado-label">Nome do Paciente:</span> <span id="pacienteResultado"></span></p>
-                <p class="resultado-item"><span class="resultado-label">Data do Exame:</span> <span id="dataResultado"></span></p>
-                <p class="resultado-item"><span class="resultado-label">Tipo de Exame:</span> <span id="tipoResultado"></span></p>
-                <p class="resultado-item"><span class="resultado-label">Resultado (Texto):</span> <span id="resultadoTexto"></span></p>
-                <p class="resultado-item"><span class="resultado-label">Arquivo:</span> <span id="arquivoNome">Nenhum arquivo selecionado</span></p>
+                <p class="resultado-item"><span class="resultado-label">Nome do Paciente:</span> <span
+                        id="pacienteResultado"></span></p>
+                <p class="resultado-item"><span class="resultado-label">Data do Exame:</span> <span
+                        id="dataResultado"></span></p>
+                <p class="resultado-item"><span class="resultado-label">Tipo de Exame:</span> <span
+                        id="tipoResultado"></span></p>
+                <p class="resultado-item"><span class="resultado-label">Resultado (Texto):</span> <span
+                        id="resultadoTexto"></span></p>
+                <p class="resultado-item"><span class="resultado-label">Arquivo:</span> <span id="arquivoNome">Nenhum
+                        arquivo selecionado</span></p>
             </div>
         </section>
     </div>
