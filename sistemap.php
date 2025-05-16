@@ -85,11 +85,11 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
 }
 
 .cadastro tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cadastro tr:hover {
-    background-color:rgb(209, 41, 41);
+.cadastro tr {
+    background-color:rgba(54, 54, 54, 0.8);
 }
 
 .cadastro .btn-edit, .cadastro .btn-delete {
@@ -117,6 +117,22 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
 .cadastro .btn-delete:hover {
     background-color: #d32f2f;
 }
+
+.logo {
+      font-family: 'Impact', sans-serif;
+      font-size: 2em;
+      /* Aumenta o tamanho da fonte da logo */
+}
+
+.body-neutro {
+      color: #0db94d;
+      /* Azul aço */
+}
+
+.boost-neutro {
+      color: #A9A9A9;
+      /* Cinza elegante */
+}
     </style>
 </head>
 <body>
@@ -135,7 +151,7 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
         </div>
         <nav>
             <ul class="menu">
-                <li><a></li>
+            <li><a href="sair.php">Sair</a></li>   
             </ul>
         </nav>
     </header>
