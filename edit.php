@@ -39,10 +39,43 @@ if(!empty($_GET['id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="style.css">
-    
+    <style>
+        .logo {
+            font-family: 'Impact', sans-serif;
+            font-size: 2em; /* Aumenta o tamanho da fonte da logo */
+        }
+
+        .body-neutro {
+            color: #0db94d;
+            /* Azul aço */
+        }
+
+        .boost-neutro {
+            color: #A9A9A9;
+            /* Cinza elegante */
+        }
+    </style>
 </head>
 
 <body>
+    <video id="background" autoplay muted loop>
+        <source src="img/video1.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <span class="body-neutro">BODY</span>
+            <span class="boost-neutro">BOOST</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="loginCliente.html">Para clientes</a></li>
+                <li><a href="loginParceiro.html">Para Colaboradores</a></li>
+                <li><a href="mapas.html">Parceiros proximos</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="box">
         <form action="saveEdit.php" method="post">
             <fieldset>
@@ -85,6 +118,22 @@ if(!empty($_GET['id'])){
             </fieldset>
         </form>
     </div>
+
+    <footer class="navbarrodape">
+        <ul>
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="manual.html">Contate-nos</a></li>
+        </ul>
+        <p>&copy; 2025 Todos os direitos reservados - BODYBOOST LTDA. CNPJ: 00.000.000/0000-00.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 
 </html>

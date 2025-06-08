@@ -151,7 +151,9 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
         </div>
         <nav>
             <ul class="menu">
-            <li><a href="sair.php">Sair</a></li>   
+                <li><a href="loginCliente.html">Para clientes</a></li>
+                <li><a href="loginParceiro.html">Para Colaboradores</a></li>
+                <li><a href="mapas.html">Parceiros proximos</a></li>
             </ul>
         </nav>
     </header>
