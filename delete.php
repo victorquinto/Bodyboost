@@ -17,7 +17,7 @@ if(isset($_POST['id'])){
     $stmt->bind_param("i", $id);
 
     if($stmt->execute()){
-        header('Location:sistemap.php');
+        header('Location:home.html');
         exit();
     }else{
         die('Execute failed:' . htmlspecialchars($stmt->error));

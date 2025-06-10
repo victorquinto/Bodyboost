@@ -1,6 +1,7 @@
 <?php
 session_start();
-unset($_SESSION['email']);
-unset($_SESSION['senha']);
+session_unset(); // Remove todas as variáveis da sessão
+session_destroy(); // Destroi a sessão
 header('Location: home.html');
+exit;
 ?>

@@ -18,9 +18,10 @@ header {
     background-color: #1e1e1e;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 15px; /* Reduzi o padding interno */
-    height: 60px; /* Defini uma altura fixa menor */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual */
+    gap: 24px; /* Espaçamento horizontal entre os itens */
+    padding: 15px 15px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -132,11 +133,6 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-#button:hover {
-    background-color: #1ed760;
-    transform: scale(1.1);
-}
-
 #background {
     position: absolute;
     top: 0;
@@ -153,6 +149,7 @@ header {
 
 .menu {
     display: flex;
+    gap: 20px;
     align-items: center;
 }
 
@@ -179,9 +176,6 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
-    color: #1ed760;
-}
 
 footer {
     background-color: #1e1e1e;
@@ -209,9 +203,6 @@ footer a {
     font-size: 1rem;
 }
 
-footer a:hover {
-    color: #1ed760;
-}
 
 .button-container {
     display: flex;
@@ -230,14 +221,10 @@ footer a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.main-button:hover {
-    background-color: #1ed760;
-    transform: scale(1.1); /* Pequeno efeito de zoom ao passar o mouse */
-}
-
 
 .cabecalho {
     background-color: transparent; /* Torna o fundo da header transparente */
+    
 }
 
 .cabecalho img,

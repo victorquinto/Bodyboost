@@ -17,7 +17,7 @@ if(mysqli_num_rows($result)<1){
     print_r('sem conexão');
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('Location: loginParceiro.php');
+    header('Location: login.php');
 
 }else{
     print_r('conectado');
@@ -26,7 +26,7 @@ if(mysqli_num_rows($result)<1){
     header('Location: sistemap.php');
 }
 }else{
-    header('location: loginParceiro.php');
+    header('location: login.php');
 }
 
 ?>

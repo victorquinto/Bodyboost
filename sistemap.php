@@ -65,7 +65,7 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
     <title>Seus Cadastros</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .cadastro {
+.cadastro {
     width: 95%;
     margin: 20px auto;
     border-collapse: collapse;
@@ -145,15 +145,14 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
 
     <!-- Navbar superior -->
     <header class="cabecalho">
-    <div class="logo">
-            <span class="body-neutro">BODY</span>
-            <span class="boost-neutro">BOOST</span>
-        </div>
+        <div class="logo">
+        <a href="sair.php"span class="body-neutro">BODY</a>
+        <a href="sair.php"span class="boost-neutro">BOOST</a>
+    </div>
         <nav>
             <ul class="menu">
-                <li><a href="loginCliente.html">Para clientes</a></li>
-                <li><a href="loginParceiro.html">Para Colaboradores</a></li>
-                <li><a href="mapas.html">Parceiros proximos</a></li>
+                <li><a href="sair.php">Home</a></li>
+                <li><a href="sair.php">Sair</a></li>
             </ul>
         </nav>
     </header>

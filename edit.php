@@ -65,14 +65,15 @@ if(!empty($_GET['id'])){
 
     <header class="cabecalho">
         <div class="logo">
-            <span class="body-neutro">BODY</span>
-            <span class="boost-neutro">BOOST</span>
-        </div>
+        <a href="home.html"span class="body-neutro">BODY</a>
+        <a href="home.html"span class="boost-neutro">BOOST</a>
+    </div>
         <nav>
             <ul class="menu">
-                <li><a href="loginCliente.html">Para clientes</a></li>
-                <li><a href="loginParceiro.html">Para Colaboradores</a></li>
-                <li><a href="mapas.html">Parceiros proximos</a></li>
+                <li><a href="sistema.php">Home</a></li>
+                <li><a href="mapas.php">Parceiros proximos</a></li>
+                <li><a href="exames.php">Historico de exames</a></li>
+                <li><a href="sair.php">Sair</a></li>
             </ul>
         </nav>
     </header>
