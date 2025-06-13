@@ -23,9 +23,9 @@ header {
     padding: 15px 15px;
     height: 60px;
     width: 100%;
-    position: fixed;
+    /*position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 100;*/
 }
 
 .i1 {
@@ -122,6 +122,17 @@ header {
 
 
 #button {
+    background-color: #1ed760;
+    width: 40%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#buttonr {
     background-color: rgb(199, 0, 0);
     width: 40%;
     color: white;
@@ -231,5 +242,3 @@ footer a {
 .cabecalho nav {
     opacity: 1; /* Garante que o logo e menu sejam visíveis */
 }
-
-

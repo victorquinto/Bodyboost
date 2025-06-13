@@ -95,8 +95,7 @@ if (isset($_POST["submit_parceiro"])) {
         .inputUser,
         .inputLogin {
             width: 96%;
-            padding: 0.75em 1em;
-            font-size: 1.1em;
+            padding: 0.35em 1em;            font-size: 1.1em;
             border-radius: 6px;
             border: 1px solid #aaa;
             margin-bottom: 0px;
@@ -275,7 +274,7 @@ if (isset($_POST["submit_parceiro"])) {
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                 </div>
                 <button type="submit" name="submit_cliente" id="button">Enviar</button>
-                <button type="reset" name="reset" id="button">Reset</button>
+                <button type="reset" name="reset" id="buttonr">Reset</button>
             </fieldset>
         </form>
         <h6>Já possui conta? <span class="switch-link" onclick="showSection('login_cliente')">Entrar</span></h6>
@@ -334,12 +333,13 @@ if (isset($_POST["submit_parceiro"])) {
                     <input type="text" name="endereco" id="endereco_pj" class="inputUser" required>
                 </div>
                 <button type="submit" name="submit_parceiro" id="button">Enviar</button>
-                <button type="reset" name="reset" id="button">Reset</button>
+                <button type="reset" name="reset" id="buttonr">Reset</button>
             </fieldset>
         </form>
         <h6>Já possui conta? <span class="switch-link" onclick="showSection('login_parceiro')">Entrar</span></h6>
     </div>
 </div>
+
 
 <footer class="navbarrodape">
     <ul>
